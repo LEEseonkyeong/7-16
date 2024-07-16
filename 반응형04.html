@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        /* 모바일 430px */
+        .list {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .list li {
+            height: 300px;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 300px;
+            font-size: 50px;
+        }
+
+        /* 테블릿 "431에서"~767px*/
+        @media screen and (min-width: 431px) {
+            .list li {
+                border: 5px solid blue;
+                width: 50%;
+                height: 200px;
+                line-height: 200px;
+                float: left;
+            }
+        }
+
+        /* 피씨 "768에서"~*/
+        @media screen and (min-width: 768px) {
+            .list li{
+                width: calc(100% / 3);
+                border: 10px solid green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li>list01</li>
+        <li>list02</li>
+        <li>list03</li>
+        <li>list04</li>
+        <li>list05</li>
+        <li>list06</li>
+        <li>list07</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".m_btn a").click(function(){
+                $(this).toggleClass("on");
+            })///* click */
+        })
+    </script>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #header {
+            height: 200px;
+            background-color: #a8eeee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .logo a {
+            display: block;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+
+        .nav {}
+
+        .main {
+            display: flex;
+        }
+
+        .main li {
+            padding: 0 10px;
+        }
+
+        .main li a {}
+
+        .m_btn {
+            display: none;
+        }
+
+        .m_btn a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("img/toggle_button.png");
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            /* transition: all 0.3s; */
+        }
+
+        .m_btn a.on {
+            background-position: right;
+        }
+
+        #section {}
+
+        .slide {}
+
+        .slide img {
+            width: 100%;
+        }
+
+        /* 테블릿 */
+        @media screen and (max-width: 768px) {
+            #wrap {
+                width: 90%;
+            }
+
+            #header {
+                height: 100px;
+                background-color: aquamarine;
+            }
+
+            .logo {
+                width: 100px;
+            }
+        }
+
+        /* 모바일 */
+        @media screen and (max-width: 430px) {
+            #wrap {
+                width: 100%;
+            }
+
+            #header {
+                background-color: aqua;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .m_btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">
+                <a href="#"><img src="img/icon01.png" alt="logo"></a>
+            </h1>
+            <nav class="nav">
+                <ul class="main">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                    <li><a href="#">menu5</a></li>
+                </ul><!-- main -->
+            </nav><!-- nav -->
+
+            <div class="m_btn">
+                <a href="#">button</a>
+            </div><!-- m_btn -->
+
+        </header><!-- header -->
+
+        <section id="section">
+            <div class="slide">
+                <img src="img/a01.jpg" alt="slide_img">
+            </div><!-- slide -->
+        </section><!-- section -->
+    </div><!-- wrap -->
+</body>
+
+</html>

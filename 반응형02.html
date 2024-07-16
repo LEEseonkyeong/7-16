@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* 모바일형 */
+        /* 0~429px 까지 */
+        body {
+            background-color: hotpink;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        /* ipad용 */
+        /* min-width 430px~ 430px부터*/
+        @media screen and (min-width: 430px) {
+            body {
+            background-color: pink;
+        }
+
+        h1 {
+            color: green;
+        }
+        }
+
+        /* pc용 */
+        /* min-width 1024px~ 1024px부터*/
+        @media screen and (min-width: 1024px) {
+            body {
+            background-color: green;
+        }
+
+        h1 {
+            color: pink;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>@media query test</h1>
+</body>
+
+</html>

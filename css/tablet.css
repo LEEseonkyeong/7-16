@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* (min-width: 501px) and (max-width: 700px) */
+
+.box1{
+    display: none;
+}
+
+.box2{
+    width: 100%;
+}
+
+.box3{
+    display: none;
+}
